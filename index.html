@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+
+<body>
+
+
+
+
+  <section id="section1">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1" class="active">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">Welcome!</h2>
+          <h4 class="animation a2">Q&A Session</h4>
+        </div>
+        <div class="form">
+          Enter Nickname:
+          <input type="text" id="nickname" class="form-field animation a3" placeholder="UPPERCASE" oninput="convertToUpperCase()"><br>
+          Childhood Hero:
+          <input type="text" id="hero" class="form-field animation a3" placeholder="UPPERCASE" oninput="convertToUpperCase2()"><br>
+          Favorate Song:
+          <input type="text" id="song" class="form-field animation a4" placeholder="lowercase" oninput="convertToLowerCase()"><br>
+          Favorate Teacher:
+          <input type="text" id="teachername" class="form-field animation a3" placeholder="UPPERCASE" oninput="convertToUpperCase3()"><br>
+          Bestfriend's name:
+          <input type="text" id="friendname" class="form-field animation a3" placeholder="UPPERCASE" oninput="convertToUpperCase4()">
+          <button class="animation a6" onclick="document.location = '#section2'">Next Page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="section2">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1" class="active">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1"></h2>
+          <h4 class="animation a2">Q&A Session</h4>
+        </div>
+        <div class="form">
+          Favorate Travel destination:
+          <input type="text" id="destination" class="form-field animation a4" placeholder="lowercase" oninput="convertToLowerCase2()"><br>
+          Favorate Food item:
+          <input type="text" id="food" class="form-field animation a4" placeholder="lowercase" oninput="convertToLowerCase3()"><br>
+          Date of Birth:
+          <input type="date" id="dob" class="form-field animation a3"><br>
+          Enter Random symbols:
+          <input type="text" id="symbols" class="form-field animation a3" placeholder="!@#$%^&*()"><br>
+          Password Length:
+          <input type="number" id="length" class="form-field animation a3" min="6" max="20" value="8">
+          <button class="animation a6" id="genr">Next Page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </section>
+
+  <section id="sectionc">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1" class="active">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1"></h2>
+          <h4 class="animation a2">Captcha Session</h4>
+        </div>
+        <div class="center">
+            <h1 id="captchaHeading">
+                Captcha Validation
+            </h1>
+            <div id="captchaBackground">
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                    <input id="submitButton" type="submit">
+                    <button id="refreshButton" type="submit">Refresh</button>
+                    <button class="animation a6" id="genr">Next Page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </section>
+
+
+
+  <section id="section3">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1" class="active">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <form id="formtu" onsubmit="sendEmail(); reset(); return false;">
+          <div class="header">
+            <h2 class="animation a1">Email Id:</h2>
+            <h4 class="animation a2"></h4>
+          </div>
+          <div class="form">
+
+            <input id="email" type="email" class="form-field animation a3" placeholder="abc@gmail.com"><br>
+            <button type="submit" class="animation a6">Generate Password</button>
+
+          </div>
+        </form>
+      </div>
+      <div class="right"></div>
+      <span id="box"></p>
+    </div>
+  </section>
+
+
+
+
+  <section id="section4">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1" class="active">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">Password has been Sent to your Email.</h2><br>
+          <h3 class="animation a2">Thank you for using our services.</h3>
+        </div>
+        <div class="form">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a4" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Song name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name ">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name"><br>
+          <button class="animation a6" onclick="document.location = '#section1'">Back to Home page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </section>
+
+
+
+  <section id="howitworks">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks" class="active">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">How Nubs Password generator Works?</h2><br>
+          <p class="animation a2">Our password generator compiles all the input that the user gives to create a strong random password.
+            The user has the option to leave out specific fields to not include characters defined in that particular field.For example,
+            user can leave the Random symbol option inorder to not include any symbols in the generated password.</p>
+          <p class="animation a2">It is directly sent to the Email Id that the user inputs.The generated password is safe and secure in any perspective as it uses Encryption that offers efficient data protection.</p>
+        </div>
+        <div class="form">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a4" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Song name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name ">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name"><br>
+          <button class="animation a6" onclick="document.location = '#section1'">Back to Home page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+  </section>
+
+
+
+
+  <section id="aboutus">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1">Home</a>
+      <a href="#aboutus" class="active">About Us</a>
+      <a href="#contactus">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">About Us.</h2><br>
+          <p class="animation a2">We are Computer science students of Sree Narayana Guru Institute of Science and Technology,Currently studying Semester-6.</p>
+          <p class="animation a2">Our team consists of 4 members:</p>
+          <p class="animation a2">-Asif Amal</p>
+          <p class="animation a2">-Ajay Shaji</p>
+          <p class="animation a2">-Ben Joy</p>
+          <p class="animation a2">-Shahin Shajahan</p>
+
+        </div>
+        <div class="form">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a4" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Song name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name ">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name"><br>
+          <button class="animation a6" onclick="document.location = '#section1'">Back to Home page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+  </section>
+
+
+
+  <section id="contactus">
+    <div class="nav">
+      <b>NUBS</b>
+      <a href="#section1">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus" class="active">Contact Us</a>
+      <a href="#howitworks">How it works?</a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">Contact us</h2><br>
+          <p class="animation a2">Our Email : <a href = "mailto: workmy000@gmail.com">NubsPasswordGen@gmail.com</a></p>
+          <p class="animation a2">Phone     : 91 - 9496396532</p>
+          </p>
+
+        </div>
+        <div class="form">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a4" placeholder="Name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Song name">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name ">
+
+          <input type="hidden" class="form-field animation a3" placeholder="Name"><br>
+          <button class="animation a6" onclick="document.location = '#section1'">Back to Home page</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+  </section>
+  <script src="https://smtpjs.com/v3/smtp.js" charset="utf-8"></script>
+  <script src="nubs.js" charset="utf-8"></script>
+</body>
+
+</html>
